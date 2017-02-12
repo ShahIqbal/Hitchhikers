@@ -1,0 +1,69 @@
+    #contRow {
+        margin-bottom: 70px;
+    }
+
+    .faicons {
+        position: relative;
+        height: 3em;
+        width: 10em;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .faicons li {
+        display: block;
+        height: 4em;
+        line-height: 4em;
+        margin: -2.2em;
+        position: absolute;
+        -webkit-transition: -webkit-transform .7s;
+        -moz-transition: -moz-transform .7s;
+        -ms-transition: -ms-transform .7s;
+        -o-transition: -o-transform .7s;
+        transition: transform 0.7s;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        text-align: center;
+        width: 4em;
+    }
+
+    .faicons a {
+        color: #fffdf0;
+        display: block;
+        height: 4em;
+        line-height: 6em;
+        text-align: center;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        width: 4em;
+    }
+
+    .faicons li:hover {
+        -webkit-transform: scale(1.3,1.3) rotate(-35deg);
+        -moz-transform: scale(1.3,1.3) rotate(-35deg);
+        -ms-transform: scale(1.3,1.3) rotate(-35deg);
+        -o-transform: scale(1.3,1.3) rotate(-35deg);
+        transform: scale(1.3,1.3) rotate(-35deg);
+    }
+
+    
+
+    .faspot_2 {
+        background: #02aaf8;
+        top: 75;
+        left: 50%;
+    }
+
+    
+
+    .faspot_4 {
+        background: #DC4A38;
+        top: 75;
+        left: 120%;
+    }
