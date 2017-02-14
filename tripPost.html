@@ -25,6 +25,7 @@
 
    <!--Custom Javascript and CSS--> 
      <script type="text/javascript" src="hitchhikers.js"></script>
+     
      <link rel="stylesheet" type="text/css" href="hitchhikers.css">
 
 
@@ -36,6 +37,32 @@
       <link rel="stylesheet" type="text/css" href="hitchhikers.css">
 </head>
 
+<style type="text/css">
+    body {
+      background-size: cover;
+      background-position: center;
+      font-family: 'Open Sans', sans-serif;
+      background-repeat: no-repeat;
+
+    }
+
+    .map {
+        min-width: 300px;
+        min-height: 300px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        background-color: #F5F5F5;
+        color: #36A0FF;
+        height: 70px;
+        font-size: 27px;
+        padding: 10px;
+
+    
+</style>
+
 <body>
 
     <div class="container">
@@ -44,27 +71,31 @@
                 <div class="well well-sm">
                     <form class="form-horizontal" method="post">
                         <fieldset>
-                        <h4>Post a trip</h4>
+                        <h4><center>Post a trip</center></h4>
+
                         <div class="form-group">
-                            <select class = "form-control" id="origin">
+                            <div class="col-md-10 col-md-offset-1">
+                            Departure: <select class = "form-control" id="origin"> </p>
+                                <option> Montreal </option>
+                                <option> Toronto </option>
+                                <option> Ottawa </option>
+                                <option> Quebec City </option>
+                            </select>
+
+                            <br/>
+                        
+                            Destination: <select class = "form-control" id="destination"> 
                                 <option> Montreal </option>
                                 <option> Toronto </option>
                                 <option> Ottawa </option>
                                 <option> Quebec City </option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <select class = "form-control" id="destination">
-                                <option> Montreal </option>
-                                <option> Toronto </option>
-                                <option> Ottawa </option>
-                                <option> Quebec City </option>
-                            </select>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                <input id="postal-code" name="postal" type="text" placeholder="Enter Postal Code for Pick-Up location" class="form-control">
                             </div>
                         </div>
 
@@ -76,7 +107,13 @@
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter Trip Description" rows="7"></textarea>
+                                <input id="seats" name="seats" type="number" placeholder="Seats" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter Trip Description" rows="5"></textarea>
                             </div>
                         </div>
 
@@ -92,23 +129,12 @@
         <div class="col-md-6">
             <div>
                 <div class="panel panel-default">
-                    <div class="text-center header">Our Office</div>
-                    <div class="panel-body text-center">
-                        <h4>Address</h4>
-                        <div>
-                        2217 Washington Blvd<br />
-                        Washington DC<br />
-                        #(703) 1234 1234<br />
-                        service@company.com<br />
-                        </div>
-                        <hr />
+        
                         <div id="map1" class="map">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 </div>
 
 
@@ -136,20 +162,5 @@
     });
 </script>
 
-<style>
-    .map {
-        min-width: 300px;
-        min-height: 300px;
-        width: 100%;
-        height: 100%;
-    }
 
-    .header {
-        background-color: #F5F5F5;
-        color: #36A0FF;
-        height: 70px;
-        font-size: 27px;
-        padding: 10px;
-    }
-</style>
 </html>
