@@ -2,8 +2,12 @@
     {
         font-family: 'Nunito', sans-serif;
         color: #384047;
+        margin: 0 auto;
     }
 
+    #signUpHeading {
+        padding-top: 5%;
+    }
     #panel1
     {
         padding: 10px 20px;
